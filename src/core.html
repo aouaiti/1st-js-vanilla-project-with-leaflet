@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="../img/icon.png" />
+    <link rel="stylesheet" href="../style/leaflet.extra-markers.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/6ff39c4c2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="../modules/leaflet.extra-markers.min.js"></script>
+    <title>Map your mobi9ats</title>
+  </head>
+  <body>
+    <div class="sidebar popIt">
+      <img src="../img/devil.png" alt="Logo" class="logo" />
+
+      <ul class="mobi9ats">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">نحب نزيد</label>
+            <select class="form__input form__input--type">
+              <option value="local">لوكال</option>
+              <option value="zatla">لحام</option>
+            </select>
+          </div>
+          <div class="form__row form__row--hidden">
+            <label class="form__label">نوع الزطلة</label>
+            <select class="form__input form__input--zatla">
+              <option value="سلعة كحلة">سلعة كحلة</option>
+              <option value="صلصال">صلصال</option>
+              <option value="صفرا">صفرا</option>
+              <option value="ليكس">ليكس</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">عند</label>
+            <input
+              class="form__input form__input--dealer"
+              placeholder="عم حسن"
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">سوم الساعة</label>
+            <input class="form__input form__input--price" placeholder="دينار" />
+          </div>
+          <div class="form__row">
+            <label class="form__label">تليفون</label>
+            <input class="form__input form__input--number" placeholder="" />
+          </div>
+          <div class="form__row form__des">
+            <label class="form__label">وصف</label>
+            <input
+              class="form__input form__input--wasf"
+              placeholder="ماركتنغ و كذا"
+            />
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+      </ul>
+
+      <p class="copyright">
+        &copy; Copyright by
+        <a
+          rel="noopener"
+          class="facebook-link"
+          target="_blank"
+          href="https://facebook.com/magnoss"
+          >Aouaiti</a
+        >. flexing and mixing.
+      </p>
+    </div>
+    <div class="whereAmI">
+      <p>أنا وين؟</p>
+    </div>
+    <div class="note">
+      <p>بش تزيد موبقات كليكي على بلاصتها في الخريطة واكتب المعلومات</p>
+    </div>
+    <div id="map"></div>
+    <i class="fas fa-map-marked-alt burger"></i>
+  </body>
+</html>
