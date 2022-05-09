@@ -261,9 +261,7 @@ class App {
       <div class="mobi9at__details trajet">
       <i class="fa-solid fa-shoe-prints"></i>
         <span class="mobi9at__value">${
-          x.trajet.toFixed() +
-          ' كلم ' +
-          ((x.trajet % 1) * 1000).toFixed().padEnd(3, 0)
+          x.trajet.toFixed() + ' كلم ' + ((x.trajet % 1) * 1000).toFixed()
         } </span>
       </div>
       <div class="mobi9at__details trajet">
